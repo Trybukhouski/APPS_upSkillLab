@@ -1,0 +1,243 @@
+body {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #EDEEF0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: regular;
+  color: #6b6b6b;
+  font-style: normal;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 20px;
+  color: #373434;
+  font-style: normal;
+}
+
+.header {
+  width: 100%;
+  background-color: #577472;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.headerdec {
+  display: inline-block;
+}
+
+.header h1 {
+    font-size: 22px;
+    font-weight: medium;
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 5px;
+}
+  
+.header p {
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 5px;
+}
+
+main img {
+  border-radius: 1000px;
+  width: 100%;
+}
+
+.section1 {
+  margin: 20px;
+}
+
+.section2 {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+  
+.contacts a {
+  text-decoration: none;
+  font-style: normal;
+  color: #4F4F4F;  
+}
+
+.contacts a:hover {
+  color:#12c26a;
+}
+
+.contact1::before {
+  content: "";
+  background-image: url(img/call.svg);
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact2::before {
+  content: "";
+  background-image: url(img/telegram.svg);
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.contact3::before {
+  content: "";
+  background-image: url(img/instagram.svg);
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.contact4::before {
+  content: "";
+  background-image: url(img/gmail.svg);
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.contact5::before {
+  content: "";
+  background-image: url(img/linkedin.svg);
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.profile::before {
+  content: "";
+  background-image: url(img/profile.svg);
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.skills::before {
+  content: "";
+  background-image: url(img/skills.svg);
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.education::before {
+  content: "";
+  background-image: url(img/education.svg);
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.languages::before {
+  content: "";
+  background-image: url(img/languages.svg);
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.code::before {
+  content: "";
+  background-image: url(img/code.svg);
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.codebg {
+  background-color: #F4F4F4;
+  padding: 10px;
+}
+
+.decoration {
+  border-bottom: 1px solid #e0e7f0;
+  padding-bottom: 30px;
+}
+
+footer p {
+
+  color: #AFAFAF;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width:10000px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  .section1 {
+      flex: 1;
+    }
+    .section2 {
+      flex: 3;
+    }
+
+} 
+
+@media screen and (max-width:650px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .inline {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .header {
+    text-align: center;
+  }
+  .header p {
+    padding: 10px 5px;
+  }
+    .header h1 {
+      padding: 10px 5px;
+  }
+  main img {
+    border-radius: 1000px;
+    width: 150px;
+  }
+} 
+@media screen and (max-width:450px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .inline {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts {
+    text-align: center;
+  }
+  main img {
+    width: 100%;
+  }
+} 
