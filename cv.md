@@ -1,5 +1,13 @@
 # Ruslan Trybukhouski
 
+## Contacts
+* Mobile: +37525 993 5248
+* E-mail: trybukhouskij@gmail.com
+* [Telegram](https://t.me/Foryort)
+* [Instagram](https://www.instagram.com/ruslan_trybukhouski/)
+* [GitHub](https://github.com/Trybukhouski)
+* [LinkedIn](https://linked.in/trybukhouski)
+
 ## Profile
 Beginner Front-End Developer without programming experience. Want to try myself in IT-industry. Interested in becoming part of innovate and friendly job team.
 
@@ -28,11 +36,3 @@ const whoIsThisHouseToStarks = (houseName) => {
 };
 export default whoIsThisHouseToStarks;
 ```
-
-## Contacts
-* Mobile: +37525 993 5248
-* E-mail: trybukhouskij@gmail.com
-* [Telegram](https://t.me/Foryort)
-* [Instagram](https://www.instagram.com/ruslan_trybukhouski/)
-* [GitHub](https://github.com/Trybukhouski)
-* [LinkedIn](https://linked.in/trybukhouski)
