@@ -66,16 +66,16 @@ color: white;
 }
 .clear-Btn:hover {
   background-color: rgb(141, 206, 155);
-  }
+}
   .button:active {
     transform: scale(0.94);
-    }
+}
 .operation:hover {
 background-color: rgb(240, 167, 159);
 }
 #decimal:hover {
   background-color: rgb(240, 167, 159);
-  }
+}
 .number:hover {
   background-color: rgb(238, 237, 157);
-  }
+}
