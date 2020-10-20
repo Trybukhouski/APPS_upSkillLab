@@ -21,12 +21,34 @@ function showTime() {
   time.innerHTML = `${hour}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)}`;
 
   setTimeout(showTime, 1000);
-}
+};
 
 //Add zeros
 function addZero(n) {
   return (parseInt(n, 10) < 10 ? '0' : '') + n;
-}
+};
+
+//Set background and greeting
+function setBgGreet() {
+  let today = new Date(),
+    hour = today.getHours();
+
+  if (hour < 12) {
+    //Morning
+    document.body.style.backgroundImage = "url('img/morning.jpg')";
+    greeting.textContent = 'Good Morning';
+  } else if (hour < 18) {
+    //Afternoon
+    document.body.style.backgroundImage = "url('img/afternoon.jpg')";
+    greeting.textContent = 'Good Afternoon';
+  } else {
+    //Evening
+    document.body.style.backgroundImage = "url('img/evening.jpg')";
+    greeting.textContent = 'Good Evening';
+    document.body.style.color = 'white';
+  };
+};
 
 //Run
 showTime();
+setBgGreet();
