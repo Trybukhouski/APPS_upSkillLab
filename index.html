@@ -9,17 +9,25 @@
 </head>
 
 <body>
+  <div>
+    <h1>Сustom Video Player</h1>
+    <div class="about">Designed by Ruslan Trybukhouski</div>
+  </div>
   <div class="player">
     <video class="player__video viewer" src="652333414.mp4">></video>
     <div class="player__controls">
       <div class="progress">
         <div class="progress__filled"></div>
       </div>
-      <button class="player__button toggle" title="Toggle play">►</button>
-      <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
-      <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
-      <button data-skip="-10" class="player__button">10s</button>
-      <button data-skip="25" class="player__button">25s</button>
+      <div class="navigation_buttons">
+        <button class="player__button toggle" title="Toggle play">►</button>
+        <span class="text">Volume:</span>
+        <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+        <span class="text">Speed:</span>
+        <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+        <button data-skip="-10" class="player__button text">-10s</button>
+        <button data-skip="10" class="player__button text">+10s</button>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>

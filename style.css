@@ -1,24 +1,144 @@
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 body {
   background-color: rgb(47, 48, 51);
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+h1 {
+  padding-top: 50px;                          /* Need to discuss: почему не работает margin-top? */
+  text-align: center;
+  color: #dfb10d;
+  font-family: Montserrat;
+  font-size: 36px;
+  ;
+}
+
+.about {
+  text-align: center;
+  color: #dfb10d;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.5;
 }
 
 .player {
-  max-width: 750px;
+  width: fit-content;
+  height: fit-content;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
   overflow: hidden;
   position: relative;
+  margin: 70px auto;
+}
+
+.text {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(47, 48, 51);
+  text-align: right;
+  margin-right: 10px;
+}
+
+.progress {
+  flex: 10;
+  position: relative;
+  display: flex;
+  flex-basis: 100%;
+  height: 5px;
+  transition: height 0.3s;
+  background: rgba(0,0,0,0.2);
+  cursor: ew-resize;
+}
+
+.progress__filled {
+  width: 50%;
+  background: rgb(47, 48, 51);
+  flex: 0;
+  flex-basis: 50%;
+}
+
+.player__button {
+  background: none;
+  border: 0;
+  color: rgb(47, 48, 51);
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.player__button:focus {
+  background-color: #ffc600;
+}
+
+.player__button:hover {
+  background-color: #dfb10d;
+}
+
+.player__slider {
+  width: 10px;
+  height: 30px;
+}
+
+.player__controls {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(100%) translateY(-5px);
+  transition: all .3s;
+  flex-wrap: wrap;
+  background:  #ffc600;
+}
+
+.player:hover .player__controls {
+  transform: translateY(0);
+}
+
+.player:hover .progress {
+  height: 10px;
+}
+
+.control_panel > * {
+  flex: 1;
+}
+
+.navigation_buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* input                         Need to discuss */
+input[type=range] {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 100%;
+  margin: 0 5px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: rgb(47, 48, 51);
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgb(47, 48, 51);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background: rgb(47, 48, 51);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
 }
