@@ -4,17 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>VIdeo speed controller</title>
 </head>
 
 <body>
-  <div class="wpapper">
-    <video src=""></video>
-    <p></p>
+  <div class="text-content">
+    <h1>Video speed controller</h1>
+    <p>Designed by Ruslan Trybukhouski</p>
+  </div>
+  <div class="wrapper">
+    <video class="movie" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" loop controls></video>
     <div class="speed">
-      <div class="speed-bar"></div>
+      <div class="speed-bar">1x</div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
+
+<!-- Need to fixed:
+- push video from Youtube -->
