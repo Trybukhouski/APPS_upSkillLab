@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background-color: rgb(56, 56, 56);
+  background-size: cover;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: rgb(68, 68, 68);
+  min-height: 100vh;
+  max-height: 600px;
+}
+
+.text-content {
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  width: 500px;
+  height: 300px;
+  background-color: rgb(247, 245, 142);
+  padding: 20px;
+}
+
+video {
+  width: 765px;
+  height: 430px;
+  z-index: 1;
+  box-shadow: 0 0 10px 3px rgba(0,0,0,0.5);
+  outline: none;
+}
+
+.wrapper {
+  margin: 210px auto;
+  width: 850px;
+  display: flex;
+  justify-content: center;
+}
+
+.speed {
+  background: rgb(78, 78, 78);
+  margin: 30px;
+  overflow: hidden;
+}
+
+ .speed-bar {
+  width: 10px;
+  background: rgb(247, 245, 142);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 2px;
+  color: rgb(56, 56, 56);
+  font-weight: 600;
+  height: 16.3%;
+}
+
+/* 
+Need to discuss
+- 38-48
+
+Need to fixed
+- Scroll video container
+- Speed Bar 
+*/
