@@ -5,8 +5,8 @@ color: rgb(243, 96, 219);
 
 :root {
   --base: rgb(32, 32, 32);
-  --spacing: 10px;
-  --blur: 10px;
+  --spacing: 0px;
+  --blur: 0px;
 }
 
 body {
