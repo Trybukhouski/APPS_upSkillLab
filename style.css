@@ -20,6 +20,33 @@ h1 {
   line-height: 1;
 }
 
+.start {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  font-size: 40px;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: 'Gochi Hand', cursive;
+  color: #D23E3E;
+}
+
+.author {
+  color: black;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.start:hover {
+  color: #5c3636;
+}
+
+.score {
+  margin-left: 20px;
+}
+
 .game {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
