@@ -1,0 +1,64 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  background: #e6ce7b;
+}
+
+body{
+  font-family: 'Gochi Hand', cursive;
+  color: #367be4;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url(img/dirt.svg) bottom center no-repeat;
+  background-size: contain;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height:70px;
+  z-index: 2;
+  bottom: -30px
+}
+
+.mole {
+  background: #367be4;
+  background: url(img/mole.svg) bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition:all 0.4s; */
+}
+
+/* Need to discuss */
+.hole.up .mole {
+  top: 0;
+}
