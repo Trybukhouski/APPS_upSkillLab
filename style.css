@@ -15,6 +15,16 @@ p {
   font-weight: 400;
 }
 
+i {
+  font-family: 'Space Mono', monospace;
+  font-style: normal;
+  color: white;
+}
+
+i:active {
+  color: rgb(133, 38, 57);
+}
+
 .use-keyboard-input {
   position: relative;
   left: 50%;
@@ -84,7 +94,7 @@ p {
 
 .keyboard__key--activatable::after {
   content: '';
-  top: 10px;
+  top: 20px;
   right: 10px;
   position: absolute;
   width: 8px;
@@ -94,9 +104,9 @@ p {
 }
 
 .keyboard__key--active::after {
-  background: #08ff00;
+  background: #f32004;
 }
 
 .keyboard__key--dark {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(102, 30, 30, 0.25);
 }
