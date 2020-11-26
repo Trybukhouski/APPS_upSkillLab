@@ -5,11 +5,13 @@ font-size: 22px;
 background: url('./img/bg.png');
 background-repeat: no-repeat;
 background-size: 100%;
+margin: 0;
 }
 
 /* Header */
 .header {
   position: absolute;
+  z-index: 2;
   width: 100%;
   height: 70px;
   top: 0;
@@ -51,8 +53,7 @@ font-size: 40px;
 /* Page structure */
 
 .game-screen {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  width: 100%;
   height: 600px;
 }
 
@@ -68,14 +69,20 @@ font-size: 40px;
 /* Navigation side */
 
 .navigation {
-  margin: 0 0 0 auto;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #494848;
-  width: 300px;
-  height: 700px;
+  width: fit-content;
+  padding: 20px;
+  margin: 10px;
+  height: fit-content;
+  border-radius: 5px;
 }
 
 .textarea {
@@ -83,14 +90,14 @@ font-size: 40px;
   border: none;
   color: beige;
   font-size: 50px;
-  width: 100%;
+  width: 3em;
   text-align: center;
-  margin: 100px 20px 0;
+  margin: 20px;
 }
 
 .buttons {
-  margin: 100px;
-  width: 100%;
+  margin: 5px;
+  width: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr) ;
@@ -99,14 +106,27 @@ font-size: 40px;
 .button {
   background-color: #4e4e4e;
   color: rgb(207, 205, 205);
-  height: 40px;
   margin: 5px;
   border-radius: 3px;
   text-align: center;
+  width: 3em;
   height: 2em;
   line-height: 2em; 
+  cursor: pointer;
 }
 
 .clear {
   color: rgb(243, 154, 154);
+  margin: 2em;
+}
+
+/* 'Water' */
+.water {
+  position: fixed;
+  left: 0; 
+  bottom: 0;
+  background-color: #f1e362;
+  opacity: 0.5;
+  width: 100%;
+  height: 0;
 }
