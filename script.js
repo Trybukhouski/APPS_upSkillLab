@@ -1,3 +1,4 @@
+let navigationArea = document.querySelector('.navigation')
 let numbers = document.querySelectorAll('.number');
 let displayArea = document.querySelector('.textarea');
 let clearBtn = document.querySelector('.clear');
@@ -5,6 +6,37 @@ let enterBtn = document.querySelector('.enter');
 let numberInDrop = document.querySelector('.drop');
 let scoreArea = document.querySelector('.score');
 let water = document.querySelector('.water');
+let playBtn = document.querySelector('.play');
+let fallenDrop = document.querySelector('.fallen-drop');
+
+//Start position
+numberInDrop.innerText = 'Lets play';
+navigationArea.classList.add('navigation-stop');
+
+//Mode Select
+playBtn.addEventListener('click', gameMode);
+
+function gameMode() {
+  playBtn.innerText === '►' ? playBtn.innerText = '❙❙' : playBtn.innerText = '►';
+  playBtn.innerText === '►' ? stopMode() : playMode();
+}
+
+//Stop Mode
+function stopMode() {
+  numberInDrop.innerText = 'Lets play';
+  navigationArea.classList.add('navigation-stop');
+  scoreArea.value = '';
+  water.hidden = true;
+}
+
+
+//Play Mode
+function playMode() {
+  numberInDrop.innerText = '0';
+  navigationArea.classList.remove('navigation-stop')
+  water.hidden = false;
+  return result();
+}
 
 //Add numbers input
 for (let i = 0; i < numbers.length; i++) {
@@ -68,7 +100,17 @@ function result() {
   water.style.cssText = `height: ${waterLevel}px`;
 }
 
-// +displayArea.value - lastRes === 0 ? scoreLevel += 1 : scoreLevel -= 1;
-// scoreArea.value = scoreLevel;
-// displayArea.value = "0";
-// lastRes = res;
+// //Time
+// fallenDrop.addEventListener('click', dropping);
+// function dropping() {
+//   let start = Date.now();
+
+//   let timer = setInterval(function () {
+//     let timePassed = Date.now() - start;
+
+//     fallenDrop.style.top = timePassed / 600 + 'px';
+
+//     if (timePassed > 6000) clearInterval(timer);
+
+//   }, 1000);
+// }
