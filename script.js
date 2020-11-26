@@ -27,8 +27,10 @@ function letClear() {
 enterBtn.addEventListener('click', result);
 
 //Add drop tack
+let lastRes = 0;
 let i = 0;
 let operands = ['-', '+', '/', '*'];
+let scoreLevel = 0;
 
 function result() {
 
@@ -50,13 +52,9 @@ function result() {
   console.log(res);
 
   // Score level
-  + displayArea.value - numberInDrop.innerText === 0 ? plus() : minus();
+  +displayArea.value - lastRes === 0 ? scoreLevel += 1 : scoreLevel -= 1;
+  scoreArea.value = scoreLevel;
   displayArea.value = "0";
-  function plus() {
-    scoreArea.innerText = '+';
-  }
-  function minus() {
-    scoreArea.innerText = '-';
-  }
+  lastRes = res;
 }
 
