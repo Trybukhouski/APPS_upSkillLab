@@ -4,33 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Raindrops</title>
 </head>
 
 <body>
-  <header></header>
-  <section>
+  <header class="header">
+    <a>Raindrops</a>
+    <div class="score-section">
+      <h2>Score:</h2>
+      <input disabled type="text" class="score" value="0" name="" placeholder="0">
+    </div>
+  </header>
+  <section class="game-screen">
     <div class="game-zone">
+      <div class="drop">0</div>
       <div class="water"></div>
     </div>
     <div class="navigation">
-      <div>Clear</div>
+      <input disabled type="text" class="textarea" value="0" name="" placeholder="0">
       <div class="buttons">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div>0</div>
-        <div>Enter</div>
-        <div>Delete</div>
+        <div class="button number">1</div>
+        <div class="button number">2</div>
+        <div class="button number">3</div>
+        <div class="button number">4</div>
+        <div class="button number">5</div>
+        <div class="button number">6</div>
+        <div class="button number">7</div>
+        <div class="button number">8</div>
+        <div class="button number">9</div>
+        <div class="button number">0</div>
+        <div class="button enter">🡆</div>
+        <div class="button">✖</div>
       </div>
+      <div class="clear">Clear</div>
     </div>
   </section>
+  <script src="script.js"></script>
 </body>
 
 </html>
