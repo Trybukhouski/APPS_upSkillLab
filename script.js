@@ -4,6 +4,7 @@ let clearBtn = document.querySelector('.clear');
 let enterBtn = document.querySelector('.enter');
 let numberInDrop = document.querySelector('.drop');
 let scoreArea = document.querySelector('.score');
+let water = document.querySelector('.water');
 
 //Add numbers input
 for (let i = 0; i < numbers.length; i++) {
@@ -31,6 +32,7 @@ let lastRes = 0;
 let i = 0;
 let operands = ['-', '+', '/', '*'];
 let scoreLevel = 0;
+let waterLevel = 0;
 
 function result() {
 
@@ -51,10 +53,22 @@ function result() {
   numberInDrop.innerText = taskInDrop();
   console.log(res);
 
-  // Score level
-  +displayArea.value - lastRes === 0 ? scoreLevel += 1 : scoreLevel -= 1;
+  // Score level & Water level
+  if (+displayArea.value - lastRes === 0) {
+    scoreLevel += 1;
+    waterLevel;
+  } else {
+    scoreLevel -= 1;
+    waterLevel += 10;
+  }
   scoreArea.value = scoreLevel;
   displayArea.value = "0";
   lastRes = res;
+
+  water.style.cssText = `height: ${waterLevel}px`;
 }
 
+// +displayArea.value - lastRes === 0 ? scoreLevel += 1 : scoreLevel -= 1;
+// scoreArea.value = scoreLevel;
+// displayArea.value = "0";
+// lastRes = res;
