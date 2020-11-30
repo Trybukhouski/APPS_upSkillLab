@@ -79,12 +79,16 @@ font-size: 40px;
 }
 
 /* Task in drop */
+.task {
+  padding-top: 170px;
+}
+
 .drop {
+  padding-top: 50px;
   font-size: 100px;
   font-weight: 700;
   opacity: 0.7;
   text-align: center;
-  padding-top: 200px;
 }
 
 .countdown {
@@ -92,6 +96,14 @@ font-size: 40px;
   color: rgb(255, 0, 0);
   opacity: 0.4;
   font-size: 80px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.operation-type {
+  padding-top: 50px;
+  font-size: 30px;
+  opacity: 0.7;
   font-weight: 800;
   text-align: center;
 }
