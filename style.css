@@ -1,0 +1,188 @@
+html {
+  font-size: 16px;
+}
+/* BODY */
+body {
+  background-color: rgba(0, 0, 0);
+  background-size: cover;
+  font-family: Montserrat,tahoma,sans-serif;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: 100%;
+  margin: 0rem;
+}
+.city-and-date {
+  margin: 3rem 10rem 0;
+}
+h1 {
+  margin: 0rem;
+  font-size: 3rem;
+}
+h2 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 400
+}
+.main-content {
+  margin: 3rem 10rem 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.today-weather-temperature {
+  font-size: 20rem;
+  line-height: 1;
+  margin-top: 0;
+  margin-right: 2rem;
+  width: fit-content;
+}
+.today-weather {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: fit-content;
+  margin-right: 3rem;
+}
+.main-image {
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+}
+.next-days-weather {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+} 
+.temperature-and-image {
+  grid-template-columns: 2fr 1fr;
+}
+.next-day-weather-image {
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+  margin-top: 0;
+}
+.next-day-temperature {
+  font-size: 3rem;
+  margin: 0;
+}
+.temperature-and-image {
+  display: flex;
+  flex-direction: row;
+}
+.location{
+  margin: auto;
+}
+#map {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.coordinats {
+  text-align: end;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
+.coordinats p {
+  margin: 0rem;
+}
+
+/* HEADER */
+header {
+  margin: 3rem 10rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+/* BUTTONS */
+.spinner-img {
+  background: url('./img/spinner.svg') no-repeat center;
+  width: 1.5em;
+  height: 1.5em;
+  margin: auto;
+}
+.spinner-img:hover {
+  transform: rotate(90deg);
+}
+button {
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: Montserrat,tahoma,sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.button {
+  margin-right: 2rem;
+}
+.active-button {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.language {
+  display: flex;
+  justify-content: space-around;
+}
+.english {
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+.russian {
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+.temperature {
+  display: flex;
+  justify-content: space-around;
+}
+.celcium {
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+.farengheit {
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+
+
+/* SEARCH */
+.search {
+  margin-left: auto;
+  margin-right: 0;
+}
+.search-button {
+  padding: 0 1rem;
+  width: fit-content;
+  border-radius: 0 .3rem .3rem 0;
+  margin: 0;
+}
+.search-field {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: Montserrat,tahoma,sans-serif;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: .3rem 0 0 .3rem;
+  height: 3rem;
+  padding: 0 1rem;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  font-size: 1em;
+  outline: none;
+}
+.search-field::placeholder {
+  color: rgb(255, 255, 255);
+}

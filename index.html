@@ -6,55 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fancy Weather</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
 </head>
 
 <body>
-  <header>
-    <button class="spinner">*</button>
-    <button class="language">RU</button>
-    <div class="temperature">
-      <button class="celcium">C°</button>
-      <button class="farengheit">F</button>
-    </div>
-    <div class="search">
-      <input type="search" placeholder="Search your city">
-      <button class="search">SEARCH</button>
-    </div>
-  </header>
-  <section>
-    <h1>city, country</h1>
-    <h2>1th December 2020</h2>
-    <div class="temperature">05</div>
-    <img class="image" src="img/clear-day.png"></img>
-    <div>
-      <p class="clouds">mostly cloudy</p>
-      <p class="feeling-temperature">FELLINGS LIKE <span>10</span>°</p>
-      <p class="wind">WIND: <span>14</span> MPH</p>
-      <p class="humidity">HUMIDITY: <span>53</span>%</p>
-      <div class="one-day-next-weather">
-        <p class="day">Tuesday</p>
-        <p class="next-day-temperature">03°</p>
-        <img src="img/clear-day.png">
+  <section class="cover">
+    <header>
+      <button class="spinner button">
+        <div class="spinner-img"></div>
+      </button>
+      <div class="language button">
+        <button class="english leng-button">en</button>
+        <button class="russian leng-button">ru</button>
       </div>
-      <div class="two-day-next-weather">
-        <p class="day">Wednesday</p>
-        <p class="next-day-temperature">04°</p>
-        <img src="img/clear-day.png">
+      <div class="temperature button">
+        <button class="celcium temp-button">C°</button>
+        <button class="farengheit temp-button">F°</button>
       </div>
-      <div class="three-day-next-weather">
-        <p class="day">Thursday</p>
-        <p class="next-day-temperature">05°</p>
-        <img src="img/clear-day.png">
+      <div class="search">
+        <input class="search-field" type="search" value='' placeholder="Search your city">
+        <button class="search-button">SEARCH</button>
       </div>
-    </div>
+    </header>
+    <main>
+      <section class="city-and-date">
+        <h1></h1>
+        <h2></h2>
+      </section>
+      <section class="main-content">
+        <div>
+          <div class="today-weather">
+            <div class="today-weather-temperature"></div>
+            <div class="today-weather-info">
+              <div class="main-image"></div>
+              <div class="today-weather-indicators">
+                <p class="clouds">mostly cloudy</p>
+                <p class="feeling-temperature"></p>
+                <p class="wind">WIND: <span>14</span> MPH</p>
+                <p class="humidity">HUMIDITY: <span>53</span>%</p>
+              </div>
+            </div>
+          </div>
+          <div class="next-days-weather">
+            <div class="one-day-next-weather">
+              <p class="next-day"></p>
+              <div class="temperature-and-image">
+                <p class="next-day-temperature">04°</p>
+                <div class="next-day-weather-image"></div>
+              </div>
+            </div>
+            <div class="two-day-next-weather">
+              <p class="next-day"></p>
+              <div class="temperature-and-image">
+                <p class="next-day-temperature">04°</p>
+                <div class="next-day-weather-image"></div>
+              </div>
+            </div>
+            <div class="three-day-next-weather">
+              <p class="next-day"></p>
+              <div class="temperature-and-image">
+                <p class="next-day-temperature">05°</p>
+                <div class="next-day-weather-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location">
+          <div id="map"></div>
+          <div class="coordinats">
+            <p class="latitude"></p>
+            <p class="longitude"></p>
+          </div>
+        </div>
+      </section>
+    </main>
   </section>
-  <section>
-    <div class="location-on-map"></div>
-    <div class="coordinats">
-      <p class="latitude">Latitude: <span>39°3'</span></p>
-      <p class="longitude">Longitude: <span>-77°29'</span></p>
-    </div>
-  </section>
+  <script src="script.js"></script>
 
 </body>
 
