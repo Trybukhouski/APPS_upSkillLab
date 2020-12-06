@@ -1,41 +1,43 @@
 const canvas = document.querySelector('#draw');
+const color = document.getElementById('color');
+const size = document.getElementById('size');
+const del = document.getElementById('delete');
+const controlPanel = document.querySelector('.control-panel');
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight - controlPanel.offsetHeight;
 const context = canvas.getContext('2d');
-context.strokeStyle = '#55DACA';
+context.strokeStyle = color.value;
 context.lineJoin = 'round';
 context.lineCap = 'round';
-context.lineWidth = 10;
+context.lineWidth = size.value;
 
+// Add Actual Settings
+function addActualColor() {
+  context.strokeStyle = this.value;
+}
+function addActualSize() {
+  context.lineWidth = this.value;
+}
+
+// Add Drawing line
 let isDrawing = false;
-let direction = true;
 let lastX = 0;
 let lastY = 0;
-let hue = 0;
-
 function toDraw(el) {
   if (!isDrawing) return; // stop - when mouse up
-  context.strokeStyle = `hsl(${hue}, 100%, 50%)`; // add stroke style
   context.beginPath(); // begin to draw the path
   context.moveTo(lastX, lastY);   // start
   context.lineTo(el.offsetX, el.offsetY);  // go to
   context.stroke(); // to draw the path
   [lastX, lastY] = [el.offsetX, el.offsetY]; // to define the path
+}
 
-  // Add line width
-  hue += 1;
-  if (hue >= 360) {
-    hue = 0;
-  } else if (context.lineWidth >= 50 || context.lineWidth <= 1) {
-    direction = !direction;
-  } else if (direction) {
-    context.lineWidth += 1;
-  } else {
-    context.lineWidth -= 1;
-  }
-};
+// Add mouse events for drawing tools panel
+color.addEventListener("blur", addActualColor);
+size.addEventListener('mousemove', addActualSize);
+del.addEventListener('click', () => context.clearRect(0, 0, canvas.width, canvas.height))
 
-// Add mouse events
+// Add mouse events for drawing
 canvas.addEventListener('mousedown', (el) => {
   isDrawing = true;
   [lastX, lastY] = [el.offsetX, el.offsetY];

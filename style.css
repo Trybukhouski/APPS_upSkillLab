@@ -1,3 +1,41 @@
+/* Global settings */
 html, body {
   margin: 0;
+}
+canvas {
+  height: 100%;
+  width: 100%;
+}
+
+/* Control Panel Style */
+.control-panel {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0,0,0,0.1);
+}
+
+/* Label and button styles */
+.setting {
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin: 20px;
+}
+button {
+  background-color: rgb(212, 176, 247);
+  color: white;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;;
+  align-self: center;
+  border: none;
+  outline: none;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0,0,0,0.1);
 }

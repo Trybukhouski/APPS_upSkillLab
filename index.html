@@ -12,7 +12,16 @@
 </head>
 
 <body>
-  <canvas id="draw" width="800" height="800"></canvas>
+  <canvas id="draw"></canvas>
+  <div class="control-panel">
+    <label class="setting">Size
+      <input id="size" name="sizing" type="range" min="1" max="100" value="1" data-sizing="px" />
+    </label>
+    <label class="setting">Color
+      <input id="color" name="color" type="color" value="#000000" />
+    </label>
+    <button class="setting" id="delete">✖</button>
+  </div>
   <script src="script.js"></script>
 </body>
 
