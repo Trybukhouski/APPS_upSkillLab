@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+  <title>Chat</title>
+</head>
+
+<body>
+  <header>
+    <h1>Messenger</h1>
+  </header>
+
+  <main>
+    <section class="chat_section">
+      <h2>Let's Chat</h2>
+      <section id="chatroom">
+        <section id="feedback"></section>
+      </section>
+
+      <section id="input_zone">
+        <input id="message" class="vertical-align" type="text" />
+        <button id="send_message" class="vertical-align" type="button">Send</button>
+      </section>
+    </section>
+
+    <section>
+      <div id="change_username">
+        <h2>Settings</h2>
+        <input id="username" type="text" placeholder="Enter Your Name" />
+        <button id="send_username" type="button">Change</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="chat.js"></script>
+</body>
+
+</html>
