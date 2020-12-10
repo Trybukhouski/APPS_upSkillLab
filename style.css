@@ -1,0 +1,204 @@
+/* Global */
+html {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+body {
+  background-color: #23263A;
+}
+section {
+  height: fit-content;
+  margin: 0 auto 15vh;
+  width: 75vw;
+}
+h2 {
+  color: #FF4A57;
+  font-size: 2rem;
+  width: fit-content;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #212336;
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+}
+.logo {
+  margin: 3vh auto;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.logo span {
+  color: #FF4A57;
+  text-transform: lowercase;
+}
+nav {
+  text-align: right;
+  width: 75vw;
+  margin: 3vh auto;
+}
+nav a{
+  color:  #FFFFFF;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+nav a:hover {
+  color: #FF4A57;
+  cursor: pointer;
+}
+
+/* Main Section */
+header {
+  margin: 0 auto 15vh;
+  width: 75vw;
+  height: fit-content;
+  background-image: url('images/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.greeting-content {
+  padding-top: 20vh;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+h1 span{
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+.greeting-content p {
+  color: #ffffff4f;
+  margin-top: -2rem;
+  letter-spacing: .1rem;
+  line-height: 1.5rem;
+}
+.contact-me {
+  margin-top: 5vw;
+  width: fit-content;
+  height: 3rem;
+  background-color: #FF4A57;
+  border-radius: 5px;
+  border: none;
+  padding: 0 2rem;
+  font-family: 'DM Sans', sans-serif;
+  text-transform: uppercase;
+  color: #23263A;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+/* My Skills Section */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.skill {
+  width: auto;
+  height: fit-content;
+  background-color: #2B2D41;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 .7rem rgba(0,0,0,0.2);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+.skill:hover {
+  background-color: #FF4A57;
+}
+.skill img {
+  width: 3rem;
+  height: 3rem;
+  fill: #FF4A57;
+}
+
+/* About Me Section */
+.phrase {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 15vw;
+  height: fit-content;
+  background-color: #FF4A57;
+  border-radius: 10px 10px 0 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-left: 12vw;
+  margin-top: 30vh;
+}
+.about-text-img {
+  display: flex;
+}
+.about-img {
+  width: 30vw;
+  margin-left: 4rem;
+}
+.about-text {
+  margin-left: 2rem;
+}
+
+/* Portfolio section */
+.portfolio-title {
+display: flex;
+justify-content: space-between;
+}
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.work {
+  background-color: white;
+  width: auto;
+  height: 60vh;
+  margin: .5rem;
+}
+
+/* Contacts Section */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+.field {
+  height: 3rem;
+  margin-bottom: 1rem;
+  background-color: #2B2D41;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+}
+.text {
+  height: 20vh;
+}
+form .contact-me {
+  margin: 0 0 0 auto;
+}
+
+/* Footer */
+footer {
+  width: auto;
+  height: fit content;
+  background-color: #212336;
+  text-align: center;
+  margin: 0;
+}
+footer p {
+  color: #595a64;
+  padding: 1rem 0 1rem 0;
+}
