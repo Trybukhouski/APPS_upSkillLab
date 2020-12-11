@@ -242,9 +242,9 @@ li:hover {
 .text {
   height: 20vh;
 }
-form .contact-me {
+/* form .contact-me {
   margin: 0 0 0 auto;
-}
+} */
 .social-links img {
   width: 2rem;
   margin-right: .7rem;

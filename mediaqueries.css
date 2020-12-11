@@ -88,9 +88,6 @@
   .contact-form, form {
     width: 100%;
   }
-  .contact-me {
-    margin: 0 auto;
-  }
   .social-links h3 {
     margin-top: 3rem;
     text-align: center;
@@ -108,6 +105,17 @@
   }
   h1 span{
     font-size: 1.5rem;
+  }
+  .contact-me {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .social-networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 }
 @media screen and (max-width: 490px) {
