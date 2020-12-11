@@ -12,13 +12,13 @@
 
 <body>
   <header>
-    <section class="menu">
-      <div class="logo"><span>my</span>portfolio</div>
+    <section id="menu" class="menu">
+      <div class="logo" href="#menu"><span>my</span>portfolio</div>
       <nav>
-        <a href="#">about</a>
-        <a href="#">skills</a>
-        <a href="#">portfolio</a>
-        <a href="#">contacts</a>
+        <a class="link" href="#about">about</a>
+        <a class="link" href="#skills">skills</a>
+        <a class="link" href="#portfolio">portfolio</a>
+        <a class="link" href="#contacts">contacts</a>
       </nav>
     </section>
     <div class="greeting-content">
@@ -31,7 +31,7 @@
     <button class="contact-me">Contact Me</button>
   </header>
   <main>
-    <section class="about">
+    <section id="about" class="about">
       <div class="phrase">
         <p>«My goal is to make the best website for you»</p>
       </div>
@@ -51,7 +51,7 @@
         </div>
       </div>
     </section>
-    <section class="skills">
+    <section id="skills" class="skills">
       <h2>My Skills</h2>
       <div class="skills-list">
         <div class="skill">
@@ -88,24 +88,107 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="portfolio-title">
-        <h2>MyWorks</h2>
+        <h2>Portfolio</h2>
         <nav class="portfolio-list">
-          <a href="#">apps</a>
-          <a href="#">games</a>
-          <a href="#">sites</a>
-          <a href="#">UI/UX</a>
+          <ul>
+            <li data-f="all">all</li>
+            <li data-f="apps">apps</li>
+            <li data-f="games">games</li>
+            <li data-f="sites">sites</li>
+          </ul>
         </nav>
       </div>
       <div class="work-list">
-        <div class="work"></div>
-        <div class="work"></div>
-        <div class="work"></div>
+        <div class="work sites">
+          <a href="https://github.com/Trybukhouski/singolo" target="_blank">
+            <h3>singolo</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work apps">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/socket-chat" target="_blank">
+            <h3>chat</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work games">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/canvas" target="_blank">
+            <h3>canvas</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work apps">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/fancy-weather" target="_blank">
+            <h3>fancy weather</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work games">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/raindrops" target="_blank">
+            <h3>raindrops</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work apps">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/keyboard" target="_blank">
+            <h3>keyboard</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work games">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/whack-a-mole" target="_blank">
+            <h3>whack a mole</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work apps">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/video-speed-controller" target="_blank">
+            <h3>video speed controller</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work apps">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/custom-video-player" target="_blank">
+            <h3>video player</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work games">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/drum-kit" target="_blank">
+            <h3>drum game</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work apps">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/flex-panel-galery" target="_blank">
+            <h3>flex panel</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work apps">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/meditation-app" target="_blank">
+            <h3>meditation app</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work apps">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/calculator" target="_blank">
+            <h3>calculator</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
+        <div class="work sites">
+          <a href="https://github.com/Trybukhouski/rsschool-cv/tree/dynamic-landing-page" target="_blank">
+            <h3>dynamic landing</h3>
+            <img src="images/games.jpg">
+          </a>
+        </div>
       </div>
       </div>
     </section>
-    <section class="contacts">
+    <section id="contacts" class="contacts">
       <h2>Contacts</h2>
       <form action="mailto:trybukhouskij@gmail.com" enctype="text/plain">
         <input class="field" type="email">
