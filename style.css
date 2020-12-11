@@ -82,7 +82,6 @@ h1 span{
 .greeting-content p {
   color: #ffffff4f;
   margin-top: -2rem;
-  letter-spacing: .1rem;
   line-height: 1.5rem;
 }
 .contact-me-form {
@@ -154,6 +153,7 @@ h1 span{
 }
 .about-img {
   width: 30vw;
+  height: 100%;
   margin-left: 4rem;
 }
 .about-text {
@@ -253,6 +253,10 @@ form .contact-me {
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
 }
 
 /* Footer */
