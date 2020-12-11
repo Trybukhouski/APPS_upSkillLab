@@ -28,7 +28,9 @@
         If my professional skills can be useful to you,<br>
         I am always open to professional suggestions.</p>
     </div>
-    <button class="contact-me">Contact Me</button>
+    <form class="contact-me-form" action="#contacts">
+      <button class="contact-me">Contact Me</button>
+    </form>
   </header>
   <main>
     <section id="about" class="about">
@@ -67,15 +69,15 @@
           <p>js</p>
         </div>
         <div class="skill">
-          <img src="icons/js.svg">
+          <img src="icons/webpack.svg">
           <p>webpack</p>
         </div>
         <div class="skill">
-          <img src="icons/js.svg">
+          <img src="icons/sass.svg">
           <p>sass</p>
         </div>
         <div class="skill">
-          <img src="icons/js.svg">
+          <img src="icons/nodejs.svg">
           <p>node js</p>
         </div>
         <div class="skill">
@@ -83,7 +85,7 @@
           <p>git</p>
         </div>
         <div class="skill">
-          <img src="icons/js.svg">
+          <img src="icons/figma.svg">
           <p>figma</p>
         </div>
       </div>
@@ -104,7 +106,7 @@
         <div class="work sites">
           <a href="https://github.com/Trybukhouski/singolo" target="_blank">
             <h3>singolo</h3>
-            <img src="images/games.jpg">
+            <img src="images/Singolo.png">
           </a>
         </div>
         <div class="work apps">
@@ -152,13 +154,13 @@
         <div class="work apps">
           <a href="https://github.com/Trybukhouski/rsschool-cv/tree/custom-video-player" target="_blank">
             <h3>video player</h3>
-            <img src="images/V">
+            <img src="images/CustomVideoPlayer.png">
           </a>
         </div>
         <div class="work games">
           <a href="https://github.com/Trybukhouski/rsschool-cv/tree/drum-kit" target="_blank">
             <h3>drum game</h3>
-            <img src="images/d">
+            <img src="images/Drum.png">
           </a>
         </div>
         <div class="work apps">
@@ -190,11 +192,34 @@
     </section>
     <section id="contacts" class="contacts">
       <h2>Contacts</h2>
-      <form action="mailto:trybukhouskij@gmail.com" enctype="text/plain">
-        <input class="field" type="email">
-        <input class="field text" type="text">
-        <input class="contact-me" type="submit" value="send message">
-      </form>
+      <div class="contacts-container">
+        <form class="contact-form" action="mailto:trybukhouskij@gmail.com" enctype="text/plain">
+          <input class="field" type="email" placeholder="Your email">
+          <input class="field text" type="text" placeholder="Your text">
+          <input class="contact-me" type="submit" value="send message">
+        </form>
+        <div class="social-links">
+          <h3>Call me</h3>
+          <div class="social-networks">
+            <img src="icons/telegram.svg">
+            <img src="icons/whatsapp.svg">
+            <img src="icons/messenger.svg">
+            <p> / 37525 993-5248</p>
+          </div>
+          <h3>Follow me</h3>
+          <div class="social-networks">
+            <a href="https://www.instagram.com/ruslan_trybukhouski/" target="_blank">
+              <img src="icons/instagram.svg">
+            </a>
+            <a href="https://www.facebook.com/trybukhouski/" target="_blank">
+              <img src="icons/facebook.svg">
+            </a>
+            <a href="https://www.linkedin.com/in/trybukhouski/" target="_blank">
+              <img src="icons/linkedin.svg">
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <script src="script.js"></script>

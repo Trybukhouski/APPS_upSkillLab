@@ -85,8 +85,10 @@ h1 span{
   letter-spacing: .1rem;
   line-height: 1.5rem;
 }
+.contact-me-form {
+  margin-top: 10vh;
+}
 .contact-me {
-  margin-top: 5vw;
   width: fit-content;
   height: 3rem;
   background-color: #FF4A57;
@@ -106,6 +108,7 @@ h1 span{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  z-index: 2;
 }
 .skill {
   width: auto;
@@ -120,7 +123,9 @@ h1 span{
   text-align: center;
 }
 .skill:hover {
-  background-color: #FF4A57;
+  background-color: #212336;
+  color: #FF4A57;
+  box-shadow: none;
 }
 .skill img {
   width: 3rem;
@@ -206,7 +211,22 @@ li:hover {
 }
 
 /* Contacts Section */
-form {
+.contacts-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.social-links {
+  margin-left: 2rem;
+}
+.social-links h3 {
+  text-transform: uppercase;
+  margin-top: 0;
+  color: #4c4d57;
+}
+.social-links p {
+  color: #7a7a7e;
+}
+.contact-form {
   display: flex;
   flex-direction: column;
   width: 40vw;
@@ -224,6 +244,15 @@ form {
 }
 form .contact-me {
   margin: 0 0 0 auto;
+}
+.social-links img {
+  width: 2rem;
+  margin-right: .7rem;
+}
+.social-networks {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
 }
 
 /* Footer */
