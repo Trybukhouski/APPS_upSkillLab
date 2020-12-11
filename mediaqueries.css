@@ -95,6 +95,15 @@
   .social-networks {
     margin: 0 auto;
   }
+  .social-networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .social-links {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 555px) {
   .phrase {
@@ -110,12 +119,6 @@
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-  }
-  .social-networks {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
   }
 }
 @media screen and (max-width: 490px) {
